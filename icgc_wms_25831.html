@@ -4,7 +4,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Institut Cartogràfic i Geològic de Catalunya -ICGC"/>
-	<meta name="description" content="Exemple llibreria Lealfet amb geoserveis ICGC">
+	<meta name="description" content="Exemple llibreria Leaflet amb geoserveis ICGC">
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <style>
       html, body, .map {
@@ -24,11 +24,10 @@
   </head>
   <body>
     <div id="map" class="map"></div>
+    
     <script type="text/javascript">
       
     var center = [41.82045, 1.54907];
-	 
-
 	var crs25831 = new L.Proj.CRS('EPSG:25831', 
 				'+proj=utm +zone=31 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
 				{
